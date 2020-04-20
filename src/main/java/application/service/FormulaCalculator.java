@@ -6,15 +6,12 @@ import java.util.Scanner;
 public class FormulaCalculator {
 
     public void run() {
-
         Scanner in = new Scanner(System.in);
         System.out.println("Enter m:");
         Integer m = Integer.parseInt(in.nextLine());
         System.out.println("Enter r:");
         Integer r = Integer.parseInt(in.nextLine());
-
         checkInputValues(m, r);
-
         BigInteger result = calculateByFormula(m, r);
 
         System.out.println("Result is: " + result);

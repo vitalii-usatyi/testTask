@@ -10,9 +10,7 @@ public class WordsCounter {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter text:");
         String text = in.nextLine();
-
         List<String> words = getWords(text);
-
         LinkedHashMap<String, Long> result = countWords(words);
 
         result.forEach((word, frequency) -> System.out.println(word + " " + frequency));
